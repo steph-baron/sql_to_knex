@@ -102,6 +102,9 @@ INNER JOIN grades ON grades.id = homeworks.grade_id
 WHERE grades.score > 3;
 ```
 
+knex('students').distinct('students.name', 'homework.title', 'grades.score').select()
+
+
 ### Bonus
 
 To answer the following questions, see the [Knex.js documentation](http://knexjs.org/).
